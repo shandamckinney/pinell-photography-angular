@@ -1,0 +1,18 @@
+.button-background{
+    background-color:#fbfffa;
+    background-image: url('https://www.transparenttextures.com/patterns/otis-redding.png');
+    transition: 0.3s;
+}
+
+.button-background:hover{
+    background-color: #3a6198;
+}
+
+.button-text{
+    color: black;
+    transition: 0.3s;
+}
+
+.button-text:hover{
+    color: white;
+}

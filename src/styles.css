@@ -1,0 +1,182 @@
+/* You can add global styles to this file, and also import other style files */
+/* body color: fbfffa */
+        /* red/pink color: E63946 */
+        /* light blue color: A8DADC */
+        /* gray blue color: 457B9D */
+        /* dark blue color: 1D3557*/
+
+        body {
+            background-color: #fbfffa;
+            /* cb997e,ddbea9,ffe8d6,b7b7a4,a5a58d,6b705c */
+        }
+
+        p,h1,h2,h3,h4,li{
+            color: #2b2b2b;
+        }
+        
+        .body-font-200 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 200;
+        }
+
+        .body-font-300 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+        }
+
+        .body-font-600-italics {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .body-font-400 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+        }
+
+        .body-font-500 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+
+        .body-font-600 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        .title-font-100 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 100;
+        }
+
+        .title-font-200 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+        }
+
+        .title-font-300 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+        }
+
+        .title-font-400 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+
+        .title-font-500 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+
+        .title-font-600 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+
+        .title-font-700 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        .title-font-300-italic{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .title-font-600-italic{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-style: italic;
+        }
+        .div-top{
+            height:55rem;
+            min-height:55rem;
+            width:100%;    
+            position:fixed;
+            top:0;
+            left:0;
+            z-index:500;
+        
+        }
+
+        .mobile-div-top{
+            height:auto;
+            width:100%;    
+            position:fixed;
+            top:0;
+            left:0;
+            z-index:500;
+        }
+
+
+        .div-bottom {
+            width:100%;    
+            height: auto;
+            background:#fbfffa;
+            background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+            margin-top:56rem;
+            z-index:600;
+            position:relative;
+            overflow-x: hidden;
+        }
+        .mobile-div-bottom {
+            width:100%;    
+            height: auto;
+            background:#fbfffa;
+            background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+            z-index:600;
+            position:relative;
+            margin-top: 150%;
+            overflow-x: hidden;
+        }
+
+        .font-size-05 {
+            font-size: .5rem
+        }
+
+        .font-size-075 {
+            font-size: .75rem
+        }
+
+        .font-size-1 {
+            font-size: 1rem
+        }
+
+        .font-size-125 {
+            font-size: 1.25rem
+        }
+
+        .font-size-175 {
+            font-size: 1.75rem
+        }
+
+        .font-size-2 {
+            font-size: 2rem
+        }
+        a {
+            color: black !important;
+        }
+
+        /* Mobile Styling */
+
+        @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+            .desktop-body{
+                display:none;
+            }
+            .desktop-nav{
+                display:none;
+            }
+        }
+        @media only screen and (min-width: 769px) {
+        /* For desktop: */
+            .mobile-body{
+                display: none
+            }
+            .mobile-nav{
+                display: none;
+            }
+        }
