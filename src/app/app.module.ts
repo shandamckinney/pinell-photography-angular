@@ -8,6 +8,9 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
 import { GalleriesComponent } from './pages/galleries/galleries.component';
 import { HomeComponent } from './pages/home/home.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContactService } from './service/contact.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,9 +23,13 @@ import { HomeComponent } from './pages/home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

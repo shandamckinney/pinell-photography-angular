@@ -1,7 +1,23 @@
 <section style="padding-top: 5%">
     <h3 class="text-center title-font-500 text-lowercase" style="font-size: 3.75rem">Wanna connect</h3>
     <p class="body-font-300 font-size-075 text-center text-uppercase" style="letter-spacing: 2px">Tell us a little about yourself!</p>
-    <div style="width: 50%; margin: 1.5% auto 3% auto;box-shadow: 0 1px 1px rgb(0 0 0 / 5%); background-color: #888888; padding: 1.5% 1% 0% 1%; border-radius: 4px; background-image: url('https://www.transparenttextures.com/patterns/otis-redding.png')">
-        <div class="inbound-form-wrapper" id="form_5580" data-path="https://app.99inbound.com/i/45aa7772-3408-4616-ac3e-92343917d039" data-token="kDKfBJL1WaBRruKKFQ8lPAtt"></div>
+    <div
+        style="width: 50%; margin: 1.5% auto 3% auto;box-shadow: 0 1px 1px rgb(0 0 0 / 5%); background-color: #888888; padding: 1.5% 1% 0% 1%; border-radius: 4px; background-image: url('https://www.transparenttextures.com/patterns/otis-redding.png')">
+        <div class="container">
+            <h2 class="text-center mb-5">Angular Contact Form Hosted On FireBase</h2>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <form class="contact-form" (submit)="sendEmail($event)">
+                        <label>Name</label>
+                        <input type="text" name="user_name" id="username">
+                        <label>Email</label>
+                        <input type="email" name="user_email" id="useremail">
+                        <label>Message</label>
+                        <textarea name="message" id="usermessage"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
