@@ -13,7 +13,8 @@ export class ContactComponent implements OnInit {
  templateParams = {
     from_name: '',
     email: '',
-    message: ''
+    message: '', 
+    hearabout: ''
   };
 
   username = ""; 
@@ -27,6 +28,7 @@ export class ContactComponent implements OnInit {
     this.templateParams.from_name = event.target.user_name.value;
     this.templateParams.email = event.target.user_email.value;
     this.templateParams.message = event.target.usermessage.value;
+    this.templateParams.hearabout = event.target.hearabout.value;
     event.preventDefault();
     emailjs.send('service_lx1wj97', 'template_4kpbqbc', this.templateParams, 'user_HB7mvCjWOIJmN1xDWdkCO')
       .then((result: EmailJSResponseStatus) => {

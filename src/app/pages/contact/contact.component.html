@@ -1,23 +1,50 @@
-<section style="padding-top: 5%">
+<section
+    style="width: 50%; margin: 6rem auto 3rem auto">
     <h3 class="text-center title-font-500 text-lowercase" style="font-size: 3.75rem">Wanna connect</h3>
-    <p class="body-font-300 font-size-075 text-center text-uppercase" style="letter-spacing: 2px">Tell us a little about yourself!</p>
+    <p class="body-font-300 font-size-075 text-center text-uppercase" style="letter-spacing: 2px">Tell us a little about
+        yourself!</p>
     <div
-        style="width: 50%; margin: 1.5% auto 3% auto;box-shadow: 0 1px 1px rgb(0 0 0 / 5%); background-color: #888888; padding: 1.5% 1% 0% 1%; border-radius: 4px; background-image: url('https://www.transparenttextures.com/patterns/otis-redding.png')">
-        <div class="container">
-            <h2 class="text-center mb-5">Angular Contact Form Hosted On FireBase</h2>
+        style="margin: 1.5% auto 3% auto; padding: 1.5% 1% 0% 1%; border-radius: 4px;">
+        <form (submit)="sendEmail($event)" id="contactForm" name="contact-form">
             <div class="row">
-                <div class="col-md-6 offset-md-3">
-                    <form class="contact-form" (submit)="sendEmail($event)">
-                        <label>Name</label>
-                        <input type="text" name="user_name" id="username">
-                        <label>Email</label>
-                        <input type="email" name="user_email" id="useremail">
-                        <label>Message</label>
-                        <textarea name="message" id="usermessage"></textarea>
-                        <input type="submit" value="Send">
-                    </form>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="label" for="name">Full Name</label>
+                        <input type="text" class="form-control" name="user_name" id="username" placeholder="Name">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="label" for="email">Email Address</label>
+                        <input class="form-control" type="email" name="user_email" id="useremail" placeholder="Email">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="hearabout">How did you hear about us?</label>
+                        <select class="form-control" id="hearabout" name="hearabout">
+                            <option value="client">Previous Client</option>
+                            <option value="pintrest">Pintrest</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="google">Google</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="label" for="#">Message</label>
+                        <textarea class="form-control" name="message" id="usermessage" cols="30" rows="4"
+                            placeholder="Tell us a little about yourself and what you're looking for!"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input type="submit" value="Send" style="background-color: #1D3557; color: white" class="btn float-right mb-3">
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </section>
