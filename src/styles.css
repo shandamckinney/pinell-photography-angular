@@ -6,7 +6,7 @@
         /* dark blue color: 1D3557*/
 
         body {
-            background-color: #fbfffa;
+            background-color: #f2e9e4;
             background-image: url('https://www.transparenttextures.com/patterns/otis-redding.png');
             /* cb997e,ddbea9,ffe8d6,b7b7a4,a5a58d,6b705c */
         }
@@ -116,7 +116,7 @@
         .div-bottom {
             width:100%;    
             height: auto;
-            background:#fbfffa;
+            background:#f2e9e4;
             background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
             margin-top:56rem;
             z-index:600;
@@ -126,7 +126,7 @@
         .mobile-div-bottom {
             width:100%;    
             height: auto;
-            background:#fbfffa;
+            background:#f2e9e4;
             background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
             z-index:600;
             position:relative;
