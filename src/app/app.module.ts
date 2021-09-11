@@ -11,7 +11,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactService } from './service/contact.service';
 import { HttpClientModule } from '@angular/common/http';
-
+import { AliAndJustinComponent } from './pages/individual-galleries/ali-and-justin/ali-and-justin.component';
+import { NickAndChadComponent } from './pages/individual-galleries/nick-and-chad/nick-and-chad.component';
+import { HunterAndMeganComponent } from './pages/individual-galleries/hunter-and-megan/hunter-and-megan.component';
+import { SaraComponent } from './pages/individual-galleries/sara/sara.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +22,11 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     PricingComponent,
     GalleriesComponent,
-    HomeComponent
+    HomeComponent,
+    AliAndJustinComponent,
+    NickAndChadComponent,
+    HunterAndMeganComponent,
+    SaraComponent
   ],
   imports: [
     BrowserModule,
