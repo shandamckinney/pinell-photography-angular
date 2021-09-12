@@ -157,6 +157,10 @@
         .font-size-2 {
             font-size: 2rem
         }
+
+        .font-size-3 {
+            font-size: 3rem
+        }
         a {
             color: black !important;
         }
@@ -180,4 +184,20 @@
             .mobile-nav{
                 display: none;
             }
+        }
+
+        .image-100{
+            width: 100%
+        }
+        
+        .image-75{
+            width: 75%;
+        }
+        
+        .image-50{
+            width: 50%
+        }
+        
+        .image-25{
+            width: 25%
         }
