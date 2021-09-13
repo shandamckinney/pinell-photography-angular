@@ -1,6 +1,5 @@
 .gallery-card{
     margin: .5rem;
-    width: 31%;
     height: auto;
     text-align: center;
 }
@@ -40,9 +39,8 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: .65rem;
-    text-align: right;
+    text-align: center;
     text-transform: uppercase;
-    display: flex;
     align-items: center;
     justify-content: flex-end;
 }
