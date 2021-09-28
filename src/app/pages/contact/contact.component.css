@@ -1,0 +1,14 @@
+.form-control {
+    border: 0;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+input[type='text'] {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+select {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}

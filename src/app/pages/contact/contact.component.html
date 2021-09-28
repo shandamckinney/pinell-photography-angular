@@ -1,50 +1,93 @@
-<section
-    style="width: 50%; margin: 6rem auto 3rem auto">
+<div style="margin: 6rem 0 0 0">
     <h3 class="text-center title-font-500 text-lowercase" style="font-size: 3.75rem">Wanna connect</h3>
-    <p class="body-font-300 font-size-075 text-center text-uppercase" style="letter-spacing: 2px">Tell us a little about
+    <p class="body-font-300 font-size-075 text-center text-uppercase" style="letter-spacing: 2px">Tell us a little
+        about
         yourself!</p>
-    <div
-        style="margin: 1.5% auto 3% auto; padding: 1.5% 1% 0% 1%; border-radius: 4px;">
-        <form (submit)="sendEmail($event)" id="contactForm" name="contact-form">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label class="label" for="name">Full Name</label>
-                        <input type="text" class="form-control" name="user_name" id="username" placeholder="Name">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label class="label" for="email">Email Address</label>
-                        <input class="form-control" type="email" name="user_email" id="useremail" placeholder="Email">
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label for="hearabout">How did you hear about us?</label>
-                        <select class="form-control" id="hearabout" name="hearabout">
-                            <option value="client">Previous Client</option>
-                            <option value="pintrest">Pintrest</option>
-                            <option value="facebook">Facebook</option>
-                            <option value="instagram">Instagram</option>
-                            <option value="google">Google</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label class="label" for="#">Message</label>
-                        <textarea class="form-control" name="message" id="usermessage" cols="30" rows="4"
-                            placeholder="Tell us a little about yourself and what you're looking for!"></textarea>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <input type="submit" value="Send" style="background-color: #1D3557; color: white" class="btn float-right mb-3">
+        <div>
+            <div class="shadow-sm" style="border: solid 2px  #1D3557; padding: 1rem; width: 75%; margin: 3rem auto; border-radius: 4px">
+                <div class="shadow-sm" style="background-color: #c9ada7; padding: 2.5rem 7rem; border-radius: 4px">
+                    <div>
+                        <form (submit)="sendEmail($event)" id="contactForm" name="contact-form">
+                            <div class="form-group">
+                                <label class="label body-font-300 font-size-075 text-center text-uppercase" style="letter-spacing: 2px" for="name">Full Name</label>
+                                <input type="text" class="form-control" name="user_name" id="username">
+                            </div>
+                            <div class="form-group">
+                                <label class="label body-font-300 font-size-075 text-center text-uppercase" style="letter-spacing: 2px" for="email">Email Address</label>
+                                <input class="form-control" type="email" name="email" id="useremail">
+                            </div>
+                            <div class="form-group">
+                                <label for="hearabout" class="label body-font-300 font-size-075 text-center text-uppercase" style="letter-spacing: 2px">How did you hear about us?</label>
+                                <select class="form-control" id="hearabout" name="hearabout">
+                                    <option value="client">Referal</option>
+                                    <option value="pintrest">Pintrest</option>
+                                    <option value="facebook">Facebook</option>
+                                    <option value="instagram">Instagram</option>
+                                    <option value="google">Google</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <fieldset class="form-group">
+                                    <label class="label body-font-300 font-size-075 text-center text-uppercase" style="letter-spacing: 2px">What type of
+                                        session are you interested in?</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="couplesJustBecause" checked>
+                                        <label class="form-check-label body-font-500 font-size-075 text-center text-uppercase" style="letter-spacing: 2px" for="gridRadios1">
+                                            Couples, just because!
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="engagement">
+                                        <label class="form-check-label body-font-500 font-size-075 text-center text-uppercase" style="letter-spacing: 2px" for="gridRadios2">
+                                            Engagement
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="wedding">
+                                        <label class="form-check-label body-font-500 font-size-075 text-center text-uppercase" style="letter-spacing: 2px" for="gridRadios3">
+                                            Wedding
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="elopment">
+                                        <label class="form-check-label body-font-500 font-size-075 text-center text-uppercase" style="letter-spacing: 2px" for="gridRadios4">
+                                            Elopment
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="maternity">
+                                        <label class="form-check-label body-font-500 font-size-075 text-center text-uppercase" style="letter-spacing: 2px" for="gridRadios5">
+                                            Maternity
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios6" value="portraits">
+                                        <label class="form-check-label body-font-500 font-size-075 text-center text-uppercase" style="letter-spacing: 2px" for="gridRadios6">
+                                            Portraits
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios7" value="family">
+                                        <label class="form-check-label body-font-500 font-size-075 text-center text-uppercase" style="letter-spacing: 2px" for="gridRadios7">
+                                            Family
+                                        </label>
+                                    </div>
+                            </fieldset>
+                            <div class="form-group">
+                                <label class="label body-font-300 font-size-075 text-center text-uppercase" style="letter-spacing: 2px" for="#">Anything else I should know or any questions you have for me?
+                                </label>
+                                <textarea class="form-control" name="message" id="usermessage" cols="30" rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="label body-font-300 font-size-075 text-center text-uppercase" style="letter-spacing: 2px" for="referal">If you answered referal above, let me know who so I can send them a thank you note :)</label>
+                                <input type="text" class="form-control" name="referal" id="referal">
+                            </div>
+                            <div class="form-group mb-5">
+                                <input type="submit" value="Send" style="background-color: #1D3557; color: white"
+                                    class="btn float-right mb-4">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </form>
-    </div>
-</section>
+        </div>

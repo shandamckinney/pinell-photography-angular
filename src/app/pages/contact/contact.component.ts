@@ -14,7 +14,9 @@ export class ContactComponent implements OnInit {
     from_name: '',
     email: '',
     message: '', 
-    hearabout: ''
+    hearabout: '', 
+    interest: '',
+    referal: ''
   };
 
   username = ""; 
@@ -26,9 +28,12 @@ export class ContactComponent implements OnInit {
 
   public sendEmail(event: any) {
     this.templateParams.from_name = event.target.user_name.value;
-    this.templateParams.email = event.target.user_email.value;
+    this.templateParams.email = event.target.email.value;
     this.templateParams.message = event.target.usermessage.value;
     this.templateParams.hearabout = event.target.hearabout.value;
+    this.templateParams.interest = event.target.gridRadios.value
+    this.templateParams.referal = event.target.referal.value;
+    
     event.preventDefault();
     emailjs.send('service_lx1wj97', 'template_4kpbqbc', this.templateParams, 'user_HB7mvCjWOIJmN1xDWdkCO')
       .then((result: EmailJSResponseStatus) => {
