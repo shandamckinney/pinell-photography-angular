@@ -5,7 +5,11 @@
 }
 
 .button-background:hover{
-    background-color: #3a6198;
+    background-color: #c9ada7;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 .button-text{
