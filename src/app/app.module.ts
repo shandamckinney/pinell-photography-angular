@@ -17,6 +17,7 @@ import { HunterAndMeganComponent } from './pages/individual-galleries/hunter-and
 import { SaraComponent } from './pages/individual-galleries/sara/sara.component';
 import { BeccaComponent } from './pages/individual-galleries/becca/becca.component';
 import { AlexandraComponent } from './pages/individual-galleries/alexandra/alexandra.component';
+import { TaraAndClanceyComponent } from './pages/individual-galleries/tara-and-clancey/tara-and-clancey.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { AlexandraComponent } from './pages/individual-galleries/alexandra/alexa
     HunterAndMeganComponent,
     SaraComponent,
     BeccaComponent,
-    AlexandraComponent
+    AlexandraComponent,
+    TaraAndClanceyComponent
   ],
   imports: [
     BrowserModule,
