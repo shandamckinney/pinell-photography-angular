@@ -11,6 +11,8 @@ import { BeccaComponent } from './pages/individual-galleries/becca/becca.compone
 import { HunterAndMeganComponent } from './pages/individual-galleries/hunter-and-megan/hunter-and-megan.component';
 import { NickAndChadComponent } from './pages/individual-galleries/nick-and-chad/nick-and-chad.component';
 import { SaraComponent } from './pages/individual-galleries/sara/sara.component';
+import { AshelyComponent } from './pages/individual-galleries/ashely/ashely.component';
+import { HayesFamilyComponent } from './pages/individual-galleries/hayes-family/hayes-family.component';
 import { TaraAndClanceyComponent } from './pages/individual-galleries/tara-and-clancey/tara-and-clancey.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
 
@@ -22,9 +24,9 @@ const routes: Routes = [
   { path: 'Sara', component: SaraComponent},
   { path: 'Becca', component: BeccaComponent},
   { path: 'Alexandra', component: AlexandraComponent},
+  { path: 'Ashley', component: AshelyComponent},
+  { path: 'HayesFamily', component: HayesFamilyComponent},
   { path: 'HunterAndMegan', component: HunterAndMeganComponent},
-  { path: 'galleries', component: GalleriesComponent},
-  { path: 'galleries', component: GalleriesComponent},
   { path: 'galleries', component: GalleriesComponent},
   { path: 'about', component: AboutComponent},
   { path: 'contact', component: ContactComponent},
