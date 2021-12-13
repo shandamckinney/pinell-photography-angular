@@ -20,6 +20,8 @@ import { AlexandraComponent } from './pages/individual-galleries/alexandra/alexa
 import { TaraAndClanceyComponent } from './pages/individual-galleries/tara-and-clancey/tara-and-clancey.component';
 import { AshelyComponent } from './pages/individual-galleries/ashely/ashely.component';
 import { HayesFamilyComponent } from './pages/individual-galleries/hayes-family/hayes-family.component';
+import { SwiperModule } from 'swiper/angular';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +46,8 @@ import { HayesFamilyComponent } from './pages/individual-galleries/hayes-family/
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SwiperModule
   ],
   providers: [ContactService],
   bootstrap: [AppComponent]
