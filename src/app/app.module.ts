@@ -21,6 +21,14 @@ import { TaraAndClanceyComponent } from './pages/individual-galleries/tara-and-c
 import { AshelyComponent } from './pages/individual-galleries/ashely/ashely.component';
 import { HayesFamilyComponent } from './pages/individual-galleries/hayes-family/hayes-family.component';
 import { SwiperModule } from 'swiper/angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { TownsleyweddingComponent } from './pages/individual-galleries/townsleywedding/townsleywedding.component';
+import { TabythaComponent } from './pages/individual-galleries/tabytha/tabytha.component';
+import { DanielleComponent } from './pages/individual-galleries/danielle/danielle.component';
+import { BradleyComponent } from './pages/individual-galleries/bradley/bradley.component';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +46,11 @@ import { SwiperModule } from 'swiper/angular';
     AlexandraComponent,
     TaraAndClanceyComponent,
     AshelyComponent,
-    HayesFamilyComponent
+    HayesFamilyComponent,
+    TownsleyweddingComponent,
+    TabythaComponent,
+    DanielleComponent,
+    BradleyComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,7 +59,9 @@ import { SwiperModule } from 'swiper/angular';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    SwiperModule
+    SwiperModule,
+    BrowserAnimationsModule ,
+    SlickCarouselModule
   ],
   providers: [ContactService],
   bootstrap: [AppComponent]

@@ -32,9 +32,14 @@
               }
             ],
             "styles": [
+              "node_modules/slick-carousel/slick/slick.scss",
+    "node_modules/slick-carousel/slick/slick-theme.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+             
+            ],
             "vendorChunk": true,
             "extractLicenses": false,
             "buildOptimizer": false,

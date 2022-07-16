@@ -15,23 +15,31 @@ import { AshelyComponent } from './pages/individual-galleries/ashely/ashely.comp
 import { HayesFamilyComponent } from './pages/individual-galleries/hayes-family/hayes-family.component';
 import { TaraAndClanceyComponent } from './pages/individual-galleries/tara-and-clancey/tara-and-clancey.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
+import { TownsleyweddingComponent } from './pages/individual-galleries/townsleywedding/townsleywedding.component';
+import { TabythaComponent } from './pages/individual-galleries/tabytha/tabytha.component';
+import { DanielleComponent } from './pages/individual-galleries/danielle/danielle.component';
+import { BradleyComponent } from './pages/individual-galleries/bradley/bradley.component';
 
 const routes: Routes = [
-  { path: 'galleries', component: GalleriesComponent},
-  { path: 'NickAndChad', component: NickAndChadComponent},
-  { path: 'AliAndJustin', component: AliAndJustinComponent},
-  { path: 'TaraAndClancey', component: TaraAndClanceyComponent},
-  { path: 'Sara', component: SaraComponent},
-  { path: 'Becca', component: BeccaComponent},
-  { path: 'Alexandra', component: AlexandraComponent},
-  { path: 'Ashley', component: AshelyComponent},
-  { path: 'HayesFamily', component: HayesFamilyComponent},
-  { path: 'HunterAndMegan', component: HunterAndMeganComponent},
-  { path: 'galleries', component: GalleriesComponent},
-  { path: 'about', component: AboutComponent},
-  { path: 'contact', component: ContactComponent},
-  { path: 'pricing', component: PricingComponent},
-  { path: '', component: HomeComponent },
+  { path: 'galleries', component: GalleriesComponent, data: { title: 'Pinell Photography - Texas Photoshoots' }},
+  { path: 'townsleywedding', component: TownsleyweddingComponent, data: { title: 'Pinell Photography - Houston Wedding' }},
+  { path: 'tabytha', component: TabythaComponent, data: { title: 'Pinell Photography - Houston Portraits' }},
+  { path: 'danielle', component: DanielleComponent, data: { title: 'Pinell Photography - Houston Senior Portraits' }},
+  { path: 'bradley', component: BradleyComponent, data: { title: 'Pinell Photography - Houston Affordable Headshots' }},
+  { path: 'NickAndChad', component: NickAndChadComponent, data: { title: 'Pinell Photography - LGBTQ Texas Wedding' }},
+  { path: 'AliAndJustin', component: AliAndJustinComponent, data: { title: 'Pinell Photography - White Sands Photoshoot' }},
+  { path: 'TaraAndClancey', component: TaraAndClanceyComponent, data: { title: 'Pinell Photography - Houston Lifestyle Photographer' }},
+  { path: 'Sara', component: SaraComponent, data: { title: 'Pinell Photography - Houston Portrait Photoshoot' }},
+  { path: 'Becca', component: BeccaComponent, data: { title: 'Pinell Photography - Houston Photoshoot' }},
+  { path: 'Alexandra', component: AlexandraComponent, data: { title: 'Pinell Photography - Houston Maternity Photoshoot' }},
+  { path: 'Ashley', component: AshelyComponent, data: { title: 'Pinell Photography - Houston Photographer Headshot' }},
+  { path: 'HayesFamily', component: HayesFamilyComponent, data: { title: 'Pinell Photography - Houston Photography Familiy' }},
+  { path: 'HunterAndMegan', component: HunterAndMeganComponent, data: { title: 'Pinell Photography - Houston Engagement Photoshoot' }},
+  { path: 'galleries', component: GalleriesComponent, data: { title: 'Pinell Photography - Galleries' }},
+  { path: 'about', component: AboutComponent, data: { title: 'Pinell Photography - About - Affordable Houston Photography' }},
+  { path: 'contact', component: ContactComponent, data: { title: 'Pinell Photography - Contact - Affordable Houston Photography' }},
+  { path: 'pricing', component: PricingComponent, data: { title: 'Pinell Photography - Pricing - Houston Photographer Pricing' }},
+  { path: '', component: HomeComponent, data: { title: 'Pinell Photography - Houston Lifestyle Photographer' } }
 ];
 
 @NgModule({
