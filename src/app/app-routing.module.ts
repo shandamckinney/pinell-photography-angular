@@ -21,7 +21,6 @@ import { DanielleComponent } from './pages/individual-galleries/danielle/daniell
 import { BradleyComponent } from './pages/individual-galleries/bradley/bradley.component';
 
 const routes: Routes = [
-  { path: 'galleries', component: GalleriesComponent, data: { title: 'Pinell Photography - Texas Photoshoots' }},
   { path: 'townsleywedding', component: TownsleyweddingComponent, data: { title: 'Pinell Photography - Houston Wedding' }},
   { path: 'tabytha', component: TabythaComponent, data: { title: 'Pinell Photography - Houston Portraits' }},
   { path: 'danielle', component: DanielleComponent, data: { title: 'Pinell Photography - Houston Senior Portraits' }},
